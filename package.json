@@ -1,10 +1,10 @@
 {
-  "name": "proje",
+  "name": "lar",
   "version": "0.0.1",
-  "description": "Projem",
+  "description": "Simple login and register system.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "author": "zeykatecool",
   "license": "ISC",
