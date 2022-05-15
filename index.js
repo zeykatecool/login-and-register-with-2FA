@@ -22,7 +22,7 @@ if(kl === "register") {
     }
     if(ks === ks) {
       db.set(`kisiss_${ks}`,ks)
-      console.log(cli.green("You have successfully registered the system " + db.fetch(`kisi_${k}`)+" !"))
+      console.log(cli.green("You have successfully registered the system " + db.fetch(`kisik_${k}`)+" !"))
     }
   }
 }
