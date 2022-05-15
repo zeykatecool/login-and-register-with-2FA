@@ -1,8 +1,12 @@
 # login-and-register
 A simple registration and login system.
+
+
+
 <h2>
 For Use
   </h2>
+  
   1.Install NPM packages
    ```sh
    npm install quick.db@latest
