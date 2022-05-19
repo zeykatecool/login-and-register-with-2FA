@@ -25,6 +25,6 @@ Please make sure the download Node.js.
 ```
 4.Commands
 ```txt
-After logging you can just use the "profile" command!
+After logging you can just use the "profile","change password","log out" commands!
 You can edit the code if you want to add other commands.
 ```
