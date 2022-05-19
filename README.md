@@ -1,4 +1,4 @@
-# login-and-register
+# login-and-register-with-2FA
 A simple registration and login system with discord webhook 2FA.
 
 
