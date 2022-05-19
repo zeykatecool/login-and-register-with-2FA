@@ -1,5 +1,5 @@
 # login-and-register
-A simple registration and login system.
+A simple registration and login system with discord webhook 2FA.
 
 
 
@@ -9,6 +9,8 @@ For Use
   
   1.Install NPM packages
    ```sh
+   npm install npmlog@latest
+   npm install discord-webhook-node@latest
    npm install quick.db@latest
    npm install prompt-sync@latest
    npm install cli-color@latest
@@ -23,6 +25,6 @@ Please make sure the download Node.js.
 ```
 4.Commands
 ```txt
-After logging you can just use the "data" command!
+After logging you can just use the "profile" command!
 You can edit the code if you want to add other commands.
 ```
