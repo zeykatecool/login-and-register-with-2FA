@@ -4,6 +4,13 @@ const db = require("quick.db")
 const mamut = Math.floor(100000 + Math.random() * 900000)
 const { Webhook } = require("discord-webhook-node");
 const { disableUnicode } = require('npmlog');
+
+ 
+/*const IMAGE_URL = 'https://cdn.discordapp.com/avatars/736159838513659934/756bc0ab4af970165dd15256922618e5.png'
+hook.setUsername('Discord Webhook Node Name');
+hook.setAvatar(IMAGE_URL)
+const hook = new Webhook("YOUR WEBHOOK URL") */
+ 
 let can = true
 if(can === true){
 let kl = prompt(cli.whiteBright("Type login for login, register for register! | >"))
@@ -56,15 +63,37 @@ if(kl === "login") {
                   console.log(cli.green("Entered the system."))
                   hook.send("Verify is successful!")
                   setTimeout( function ma() {
-                     let menu = prompt(cli.whiteBright("Type profile for account information! | >"))
-                     if(menu !== "profile") {
-                        ma()
-                    }
+                     let menu = prompt(cli.whiteBright("You can use commands! | >"))
+                     if(menu === "log off" & "log out" & "sign out") {
+                      return console.log(cli.green("You have logged off of your account."))
+                       }
                      if(menu === "profile") {
-                        console.log("Username : " + db.fetch(`kisik_${i}`) + "\n2FA Code : "+db.fetch("kod"))
+                        console.log("Username : " + db.fetch(`kisik_${i}`) + "\n2FA code entered with : "+db.fetch("kod"))
                         ma()
                      }
-                  
+
+                  if(menu === "change password") {
+                    let nowp = prompt(cli.whiteBright("Type your current password! | >"))
+                    if(nowp !== db.fetch(`kisiss_${is}`)) {
+                      console.log(cli.red("Wrong password!"))
+                      ma()
+                    }
+                    if(nowp === db.fetch(`kisiss_${is}`)) {
+                   let cp = prompt(cli.whiteBright("Type your new password! | >"))
+                   if(cp === "") {
+                     console.log(cli.red("Your username must be at least 1 character!"))
+                     ma()
+                   }
+                   if(cp !== "") {
+                     if(cp === cp) {
+                      db.set(`kisiss_${is}`,cp)
+                      console.log(cli.green("Your password has been changed!"))
+                      ma()
+                     }
+                   
+                   }
+                    }
+                  }
                   })
                 }
                 else{
